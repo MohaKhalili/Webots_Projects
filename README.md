@@ -3,7 +3,7 @@
 
 This is a repository of my Webots test projects I've made for learning Webots world.
 
-Python is the language programming that i use for coding robot controller.
+Python is the language programming that I use for coding robot controller.
 
 ## Webots refrences
 
