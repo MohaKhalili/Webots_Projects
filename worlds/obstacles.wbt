@@ -1,0 +1,124 @@
+#VRML_SIM R2019b utf8
+WorldInfo {
+  basicTimeStep 16
+}
+Viewpoint {
+  orientation 0.038479393132918455 0.8586205732476756 0.5111653817503249 2.762229682376608
+  position 0.9723716779980732 2.2897420433460662 -1.23595018641444
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+  size 1 1
+}
+WoodenBox {
+  translation -0.126882 0.05 -0.374713
+  name "wooden box(4)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation -0.274907 0.05 0.174546
+  name "wooden box(6)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation 0.228617 0.05 0.0321672
+  name "wooden box(8)"
+  size 0.1 0.1 0.1
+}
+E-puck {
+  hidden rotation_1 1 0 0 0.26073614718447585
+  hidden rotation_2 1 0 0 2.549090323177646
+  translation -0.04001552807431733 -2.8481194642852523e-05 -0.41478973889093296
+  rotation 0.0015629648001421208 0.9999975572552355 -0.0015628898218560893 1.5707987154525793
+  controller "e-puck_go_forward"
+  battery [
+    0
+  ]
+}
+Solid {
+  translation -0.262669969866052 0.04958907968091044 -0.23165550932666026
+  rotation -0.7654748907019099 0.10897486162341753 0.6341708533503064 -2.169272226676482
+  children [
+    Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry DEF BALL_GEOMETRY Sphere {
+        radius 0.05
+        subdivision 2
+      }
+    }
+  ]
+  boundingObject USE BALL_GEOMETRY
+  physics Physics {
+  }
+}
+Solid {
+  translation -0.44054481494403974 0.04958907968091044 0.003424982957737689
+  rotation 0.12384536714081701 0.8598454229832667 -0.4953061413030161 -0.6375164621308783
+  children [
+    DEF BALL_GEOMETRY Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.05
+        subdivision 2
+      }
+    }
+  ]
+  name "solid(1)"
+  boundingObject USE BALL_GEOMETRY
+  physics Physics {
+    centerOfMass [
+      0 0 0
+    ]
+  }
+}
+Solid {
+  translation -0.513584 0.05 -0.000334855
+  children [
+    DEF WALL_GEO Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.03 0.1 1
+      }
+    }
+  ]
+  name "solid(2)"
+  boundingObject USE WALL_GEO
+}
+Solid {
+  translation -0.0223012 0.05 -0.503034
+  rotation 0 1 0 -1.5707953071795862
+  children [
+    USE WALL_GEO
+  ]
+  name "solid(3)"
+  boundingObject USE WALL_GEO
+}
+Solid {
+  translation -0.00707551 0.05 0.500082
+  rotation 0 1 0 -1.5707953071795862
+  children [
+    USE WALL_GEO
+  ]
+  name "solid(4)"
+  boundingObject USE WALL_GEO
+}
+Solid {
+  translation 0.496378 0.05 -0.0179179
+  children [
+    USE WALL_GEO
+  ]
+  name "solid(5)"
+  boundingObject USE WALL_GEO
+}

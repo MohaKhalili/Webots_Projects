@@ -1,0 +1,224 @@
+#VRML_SIM R2019b utf8
+WorldInfo {
+  basicTimeStep 16
+  contactProperties [
+    ContactProperties {
+      material2 "dumbbell"
+      coulombFriction [
+        0
+      ]
+    }
+  ]
+}
+Viewpoint {
+  orientation 0.20729937025761833 -0.8647390479023346 -0.4574421822741742 3.8456189755745904
+  position 0.5864208495067228 1.0440415308864968 -0.5306389718096343
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+  size 1 1
+}
+WoodenBox {
+  translation -0.0752092 0.05 -0.205855
+  name "wooden box(4)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation -0.274907 0.05 0.174546
+  name "wooden box(6)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation 0.228617 0.05 0.0321672
+  name "wooden box(8)"
+  size 0.1 0.1 0.1
+}
+E-puck {
+  hidden position_0_0 1418.5000175290995
+  hidden position_0_1 1012.7147350179993
+  hidden linearVelocity_0 -0.023897847748760633 6.313945316577267e-05 0.057987650104518146
+  hidden angularVelocity_0 0.0031869398565292466 0.0051581192532264685 0.003970619663712171
+  hidden translation_1 -0.026000000000000013 0.02 0
+  hidden rotation_1 1 0 0 1.4998618934870207
+  hidden linearVelocity_1 -0.024096104162075093 -2.3736991098126424e-06 0.058085323405989535
+  hidden angularVelocity_1 2.904657868371651 -0.006720807778260975 1.2044278503707826
+  hidden translation_2 0.026000000000000013 0.02 0
+  hidden rotation_2 1 0 0 5.16128474509375
+  hidden linearVelocity_2 -0.023839434246808 -7.034012085696197e-07 0.05815824334853371
+  hidden angularVelocity_2 2.907499820852229 0.004314671619221713 1.1975224727263092
+  translation 0.4072854607994316 -3.88455978044544e-05 -0.20059274134349594
+  rotation -8.716964066230614e-05 0.9999993416643385 0.0011441469937012241 2.7516991042798997
+  controller "e-puck_avoid_collision"
+  battery [
+    0
+  ]
+}
+Solid {
+  translation -0.37463515083186827 0.04958907968224734 0.11871890522891586
+  rotation -0.17921372395331722 -0.520409764011597 0.8348988673295576 2.268314226424571
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "textures/red_brick_wall.jpg"
+          ]
+        }
+        roughness 1
+        metalness 0
+      }
+      geometry DEF BALL_GEOMETRY Sphere {
+        radius 0.05
+        subdivision 2
+      }
+    }
+  ]
+  boundingObject USE BALL_GEOMETRY
+  physics Physics {
+  }
+  linearVelocity -4.233241869306686e-05 -2.1106941276703014e-11 -0.0003004262284072495
+  angularVelocity -0.00600852456814499 -0.00587886808428522 0.000846648373861337
+}
+Solid {
+  translation 0.06154898139261527 0.04958907968091044 -0.34071074789643446
+  rotation 0.15952960057879595 0.8887267216382682 -0.42978497040411495 -2.56727203630483
+  children [
+    DEF BALL_GEOMETRY Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.05
+        subdivision 2
+      }
+    }
+  ]
+  name "solid(1)"
+  boundingObject USE BALL_GEOMETRY
+  physics Physics {
+    centerOfMass [
+      0 0 0
+    ]
+  }
+  linearVelocity 0.002059266621623035 1.9006352651927716e-16 0.004424977601295824
+  angularVelocity 0.08849955202591647 0.04127385986860655 -0.0411853324324607
+}
+Solid {
+  translation -0.513584 0.05 -0.000334855
+  children [
+    DEF WALL_GEO Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 1
+        roughness 0.5
+        metalness 0
+      }
+      geometry Box {
+        size 0.03 0.1 1
+      }
+    }
+  ]
+  name "solid(2)"
+  boundingObject USE WALL_GEO
+}
+Solid {
+  translation -0.0223012 0.05 -0.503034
+  rotation 0 1 0 -1.5707953071795862
+  children [
+    USE WALL_GEO
+  ]
+  name "solid(3)"
+  boundingObject USE WALL_GEO
+}
+Solid {
+  translation -0.00707551 0.05 0.500082
+  rotation 0 1 0 -1.5707953071795862
+  children [
+    USE WALL_GEO
+  ]
+  name "solid(4)"
+  boundingObject USE WALL_GEO
+}
+Solid {
+  translation 0.496378 0.05 -0.0179179
+  children [
+    USE WALL_GEO
+  ]
+  name "solid(5)"
+  boundingObject USE WALL_GEO
+}
+Solid {
+  translation -0.2314778493330578 0.029221491831867966 -0.010920022414320267
+  rotation -0.5964015642324404 0.6769448912046704 0.43133605049079243 -2.5868046308272725
+  children [
+    DEF GO Group {
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            baseColorMap ImageTexture {
+              url [
+                "textures/asphalt.jpg"
+              ]
+            }
+            roughness 1
+            metalness 0
+          }
+          geometry Cylinder {
+            height 0.1
+            radius 0.01
+          }
+        }
+        Transform {
+          translation 0 0.07 0
+          rotation 1 0 0 1.5708
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 1 0 0
+                roughness 1
+                metalness 0
+              }
+              geometry Sphere {
+                radius 0.03
+                subdivision 2
+              }
+            }
+          ]
+        }
+        Transform {
+          translation 0 -0.07 0
+          rotation 1 0 0 1.5708
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 1 0 0
+                roughness 1
+                metalness 0
+              }
+              geometry Sphere {
+                radius 0.03
+                subdivision 2
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  name "solid(6)"
+  contactMaterial "dumbbell"
+  boundingObject USE GO
+  physics Physics {
+    density -1
+    mass 2
+    centerOfMass [
+      0 0.01 0
+    ]
+  }
+  linearVelocity -0.013664092582385996 -1.2442311447011936e-09 0.0008361281480326928
+  angularVelocity -0.9359435706200107 -0.5468826379227044 1.5538237371976116
+}

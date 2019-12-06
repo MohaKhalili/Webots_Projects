@@ -1,0 +1,78 @@
+#VRML_SIM R2019b utf8
+WorldInfo {
+  basicTimeStep 16
+}
+Viewpoint {
+  orientation 0.3797415300981145 0.6408893635095021 0.6671260705887068 3.83208812316583
+  position 0.1206011648675918 2.360996351738331 0.059166436920474366
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  wallHeight 0.05
+}
+WoodenBox {
+  translation -0.0411424 0.05 0.112641
+  name "wooden box(1)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation 0.20895286024522658 0.049960817284796066 -0.4260755856075821
+  rotation 8.49199100706412e-06 -0.9990956914801071 0.04251822190276441 0.004256873122014928
+  size 0.1 0.1 0.1
+  mass 0.2
+}
+WoodenBox {
+  translation -0.126882 0.05 -0.374713
+  name "wooden box(4)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation -0.369426 0.05 -0.058706
+  name "wooden box(5)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation -0.274907 0.05 0.174546
+  name "wooden box(6)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation -0.0435328 0.05 -0.12883
+  name "wooden box(7)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation -0.0763056 0.05 0.343548
+  name "wooden box(3)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation 0.241222 0.05 0.295977
+  name "wooden box(10)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation -0.396352 0.05 0.334705
+  name "wooden box(9)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation 0.228617 0.05 0.0321672
+  name "wooden box(8)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation 0.304914 0.05 -0.183257
+  name "wooden box(2)"
+  size 0.1 0.1 0.1
+}
+E-puck {
+  translation 0.29589288022950616 -2.772167421932238e-05 -0.4316997732389854
+  rotation 0.0004104042410404 0.9999986777046596 -0.0015735810405828345 2.942866677927695
+  battery [
+    0
+  ]
+}
